@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Garden</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="goldBox">
+					<p class="goldLabel" id="goldLabel">Gold : 0G</p>
+				</div>
+				<div class="titleBox">
+					<p class="titleLabel">My Garden</p>
+				</div>
+				<div class="empty"></div>
+			</div>
+			<div class="game">
+				<div class="leftMenu">
+					<div class="actionMenu">
+						<div class="actionLabelBox">
+							<p class="actionLabel">Actions</p>
+						</div>
+						<div class="actionTool">
+							<!-- Plant Tool -->
+							<button class="actionBtn" id="plantTool">
+								<div class="btnBox">
+									<img class="btnImage" src="assets/ic_.png" alt="Plant" />
+									<div class="btnLabel">
+										<p class="toolLabel">Plant</p>
+									</div>
+								</div>
+							</button>
+							<!-- Water Tool -->
+							<button class="actionBtn" id="waterTool" >
+								<div class="btnBox">
+									<img class="btnImage" src="assets/ic_water.png" alt="Water" />
+									<div class="btnLabel">
+										<p class="toolLabel">Water</p>
+									</div>
+								</div>
+							</button>
+							<!-- Harvest Tool -->
+							<button class="actionBtn" id="harvestTool">
+								<div class="btnBox">
+									<img class="btnImage" src="assets/ic_harvest.png" alt="Harvest" />
+									<div class="btnLabel">
+										<p class="toolLabel">Harvest</p>
+									</div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<button class="btnNextDay" id="btnNextDay">Next Day</button>
+				</div>
+				<div class="gameArea" id="gameArea"></div>
+				<div class="rightMenu">
+					<div class="rMenuInventory" id="inventoryMenu">
+						<div class="headMenu">
+							<div class="rmenuLabel">
+								<p class="actionLabel">Inventory</p>
+							</div>
+							<button class="btnExpand" id="openInventory"><span>+</span></button>
+						</div>
+						<div class="inventoryBawah">
+							<div class="bodyInventory" id="bodyInventory"></div>
+						</div>
+					</div>
+					<div class="rMenuShop" id="shopMenu">
+						<div class="headMenu">
+							<div class="rmenuLabel">
+								<p class="actionLabel">Shop</p>
+							</div>
+							<button class="btnExpand" id="openShop"><span>+</span></button>
+						</div>
+						<div class="shopBawah">
+							<div class="bodyShop" id="bodyShop"></div>
+							<div class="priceBox" id="priceBox">
+								<p class="priceLabel" id="priceLabel">Price:</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="jquery-3.6.1.min.js"></script>
+	<script src="script.js"></script>
+</html>
